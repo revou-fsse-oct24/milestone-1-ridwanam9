@@ -70,6 +70,18 @@ nav {
     color: var(--secondary);
 }
 
+/* Sembunyikan checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Style tombol hamburger */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* Hero Section */
 #hero {
     background-image: linear-gradient(rgba(132, 132, 132, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/office.webp');
@@ -242,6 +254,40 @@ footer {
 
 
 @media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Sembunyikan navigasi */
+        flex-direction: column;
+        background-color: var(--primary);
+        position: absolute;
+        top: 100%; /* Tepat di bawah header */
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        color: var(--background);
+        font-weight: bold;
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Tampilkan navigasi saat checkbox dicentang */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    /* Tampilkan tombol hamburger */
+    .hamburger {
+        display: block;
+    }
+
     .about-content, .contact-info {
         flex-direction: column;
     }
