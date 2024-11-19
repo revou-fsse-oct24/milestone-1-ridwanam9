@@ -1,3 +1,26 @@
+html {
+    font-size: 18px; /* Basis font ukuran default */
+}
+
+/* Penyesuaian ukuran pada berbagai elemen */
+h1 {
+    font-size: 2.5rem; /* Setara dengan 40px */
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem; /* Setara dengan 32px */
+}
+
+h3 {
+    font-size: 1.5rem; /* Setara dengan 24px */
+}
+
+p, li {
+    font-size: 1rem; /* Setara dengan 16px */
+    line-height: 1.8; /* Menambah jarak untuk teks paragraf */
+}
+
 :root {
     --primary: #0066cc;
     --secondary: #00aaff;
@@ -21,10 +44,8 @@ section h2 {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
-    background-color: var(--background);
+    font-size: 1rem; /* Setara dengan 16px */
+    line-height: 1.6; /* Memberikan jarak antar baris untuk keterbacaan */
 }
 
 .container {
@@ -261,6 +282,23 @@ footer {
 
 
 @media (max-width: 768px) {
+
+    html {
+        font-size: 15px; /* Ukuran font basis lebih kecil */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ukuran headline lebih kecil */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 1rem; /* Membuat teks paragraf lebih kecil */
+    }
+
     .nav-links {
         display: none; /* Sembunyikan navigasi */
         flex-direction: column;
