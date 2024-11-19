@@ -219,6 +219,14 @@ textarea {
     height: 150px;
 }
 
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 2rem 0;
+}
+
 @media (max-width: 768px) {
     .about-content, .contact-info {
         flex-direction: column;
