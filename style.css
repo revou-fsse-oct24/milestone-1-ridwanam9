@@ -70,6 +70,74 @@ nav {
     color: var(--secondary);
 }
 
+/* Hero Section */
+#hero {
+    background-image: linear-gradient(rgba(132, 132, 132, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/office.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--background);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.5s;
+    animation-fill-mode: both;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+    margin-left: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary:hover {
+    background-color: #ff8533;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
 
 @media (max-width: 768px) {
     .about-content, .contact-info {
