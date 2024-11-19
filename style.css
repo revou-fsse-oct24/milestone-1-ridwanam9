@@ -227,6 +227,20 @@ footer {
     padding: 2rem 0;
 }
 
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 @media (max-width: 768px) {
     .about-content, .contact-info {
         flex-direction: column;
