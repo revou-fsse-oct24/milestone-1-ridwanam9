@@ -192,7 +192,32 @@ section {
     margin-bottom: 1rem;
 }
 
+/* Contact Section */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
 
+.contact-form, .contact-details {
+    flex: 1;
+}
+
+.contact-form {
+    padding-right: 2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
 
 @media (max-width: 768px) {
     .about-content, .contact-info {
