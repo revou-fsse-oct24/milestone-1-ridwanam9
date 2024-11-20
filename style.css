@@ -182,22 +182,54 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+    animation: fadeInUp 1s ease;
 }
 
 .about-text {
     flex: 1;
     padding-right: 2rem;
+    color: var(--text);
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--text-light);
 }
 
 .about-image {
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .about-image img {
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
 }
 
 
@@ -331,6 +363,20 @@ footer {
     /* Tampilkan tombol hamburger */
     .hamburger {
         display: block;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-image img {
+        max-width: 100%;
     }
 
     .about-content, .contact-info {
