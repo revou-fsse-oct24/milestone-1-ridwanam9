@@ -40,7 +40,7 @@ Alternatifnya, Anda dapat menggunakan ekstensi live server di editor kode Anda (
 
 ## Struktur Proyek
 
-    
+    ```
     /project-folder
     │
     ├── index.html                  # Halaman utamawebsite
@@ -51,7 +51,7 @@ Alternatifnya, Anda dapat menggunakan ekstensi live server di editor kode Anda (
     │   └── /image_documentations   # Gambar Dokumentasi
     │
     └── README.md                   # Dokumentasi proyek
-
+    ```
 
 
 ## Kontribusi
@@ -63,3 +63,33 @@ Jika Anda ingin berkontribusi untuk meningkatkan proyek ini:
 3. Commit perubahan Anda (git commit -m 'Menambahkan fitur X').
 4. Push ke branch Anda (git push origin feature-nama-fitur).
 5. Buat Pull Request.
+
+
+# Tahap Pengembangan
+
+1. Header
+![Header](assets/images/header_code.png)
+![Header](assets/images/header.png)
+
+
+2. Hero Section
+![Hero](assets/images/herocode.png)
+![Hero](assets/images/hero.png)
+
+3. About Section
+![About](assets/images/aboutcode.png)
+![About](assets/images/about.png)
+
+4. Services Section
+![Services](assets/images/servicescode.png)
+
+5. Contact Section
+![Contact](assets/images/contactcode.png)
+![Contact](assets/images/contact.png)
+
+6. Footer
+![Footer](assets/images/footercode.png)
+![Footer](assets/images/footer.png)
+
+> Note: Tampilan di atas belum termasuk styling dan mungkin membutuhkan pengembangan lebih lanjut.
+
