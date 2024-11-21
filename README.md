@@ -93,3 +93,33 @@ Jika Anda ingin berkontribusi untuk meningkatkan proyek ini:
 
 > Note: Tampilan di atas belum termasuk styling dan mungkin membutuhkan pengembangan lebih lanjut.
 
+# Dependencies
+Proyek ini menggunakan beberapa dependencies eksternal untuk meningkatkan desain dan fungsionalitas:
+
+1. **Font Awesome**  
+   - **URL**: [https://fontawesome.com](https://fontawesome.com)  
+   - **Penggunaan**:  
+     Digunakan untuk ikon pada bagian "Services". Contohnya:
+     ```html
+     <i class="fas fa-laptop-code"></i>
+     ```
+     Link CDN Font Awesome disertakan di dalam `<head>`:
+     ```html
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     ```
+
+2. **Animasi Keyframes CSS**  
+   Animasi yang digunakan seperti fadeInUp didefinisikan langsung di file CSS tanpa menggunakan library eksternal.
+   ```css
+   /* Keyframes for Animation */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
