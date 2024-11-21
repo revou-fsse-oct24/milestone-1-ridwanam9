@@ -127,3 +127,31 @@ Proyek ini menggunakan beberapa dependencies eksternal untuk meningkatkan desain
     }
 
 
+## Pilihan Desain
+
+### 1. **Tipografi dan Keterbacaan**
+   - Ukuran font dasar diatur ke 18px, dengan judul yang lebih besar untuk kejelasan. Pada perangkat seluler, ukuran font dikurangi menjadi 15 piksel untuk mengoptimalkan keterbacaan.
+   - Ukuran judul disesuaikan menggunakan unit `rem` untuk menjaga skala yang konsisten di berbagai ukuran layar.
+
+### 2. **Tata Letak**
+   - Sistem grid yang fleksibel digunakan untuk mengatur konten secara efisien, khususnya di services card dan bagian "Tentang Kami", yang beradaptasi dari tata letak horizontal ke vertikal pada layar yang lebih kecil.
+   - Tata letaknya responsif, dengan media query menyesuaikan desain untuk layar yang lebih sempit dari 768 piksel. Hal ini mencakup perubahan pada ukuran font, susunan tata letak, dan perilaku navigasi.
+
+### 3. **Navigasi dan Responsif Seluler**
+   - Bar navigasi dipasang di bagian atas halaman untuk memudahkan akses.
+   - Menu hamburger disertakan untuk perangkat seluler. Menu muncul ketika kotak centang dicentang, memungkinkan pengguna untuk mengubah visibilitas link navigasi.
+   - Pada layar yang lebih kecil, link menu ditumpuk secara vertikal, dan header lebih ringkas untuk memaksimalkan ruang yang tersedia.
+
+### 4. **Skema Warna**
+   - Warna utama (`#0066cc`) digunakan untuk header, tautan, dan tombol ajakan bertindak untuk menciptakan tampilan profesional dan kohesif.
+   - Warna sekunder (`#00aaff`) digunakan untuk efek hover dan elemen aksen guna menarik perhatian dan menciptakan kontras.
+   - Latar belakang berwarna putih (`#ffffff`), dengan teks dalam nuansa gelap (`#333333`) agar lebih mudah dibaca.
+
+### 5. **Animasi**
+   - Situs web menggunakan animasi `fadeInUp` untuk efek masuk yang lancar pada bagian pahlawan dan bagian konten (Tentang Kami, Layanan).
+   - Animasi meningkatkan pengalaman pengguna dengan memberikan interaksi visual tanpa membebani konten.
+
+### 6. **Bentuk dan Aksesibilitas**
+   - Bidang formulir ditata untuk memudahkan interaksi, dengan label dan placeholder yang tepat.
+   - Atribut `aria-labelledby` digunakan untuk dukungan pembaca layar yang lebih baik, memastikan bahwa semua pengguna dapat menavigasi situs secara efektif.
+
