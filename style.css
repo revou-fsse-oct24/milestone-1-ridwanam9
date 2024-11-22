@@ -263,7 +263,7 @@ figcaption {
 }
 
 .gallery-image {
-    max-width: 25%;
+    max-width: 23.5%;
     height: auto;
     border-radius: 8px;
     scroll-snap-align: center; /* Menyelaraskan gambar saat scroll */
