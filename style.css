@@ -253,6 +253,38 @@ figcaption {
     text-align: center;
 }
 
+/* Container galeri gambar */
+.image-gallery {
+    display: flex; /* Menyusun gambar secara horizontal */
+    overflow-x: auto; /* Menambahkan scroll horizontal */
+    gap: 16px; /* Jarak antar gambar */
+    padding: 30px; /* Padding vertikal */
+    scroll-snap-type: x mandatory; /* Mengatur scroll agar gambar pas satu per satu */
+}
+
+.gallery-image {
+    max-width: 25%;
+    height: auto;
+    border-radius: 8px;
+    scroll-snap-align: center; /* Menyelaraskan gambar saat scroll */
+    flex-shrink: 0; /* Agar gambar tidak mengecil saat diperkecil */
+    object-fit: cover; /* Menjaga rasio gambar */
+}
+
+/* Gaya untuk scrollbar */
+.image-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.image-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
 
 /* Service Section */
 /* Container grid untuk service cards */
@@ -455,6 +487,7 @@ footer p {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6;
+    padding: 3px;
 }
 
 footer a {
@@ -574,6 +607,15 @@ footer a:hover {
     .about-text, .about-image, .contact-form, .contact-details {
         padding: 0;
         margin-bottom: 2rem;
+    }
+
+    .gallery-image {
+        max-width: 15rem;
+        height: auto;
+        border-radius: 8px;
+        scroll-snap-align: center; /* Menyelaraskan gambar saat scroll */
+        flex-shrink: 0; /* Agar gambar tidak mengecil saat diperkecil */
+        object-fit: cover; /* Menjaga rasio gambar */
     }
 
     .hero-content h1 {
