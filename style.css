@@ -1,5 +1,5 @@
 html {
-    font-size: 18px; /* Basis font ukuran default */
+    font-size: 16px; /* Basis font ukuran default */
 }
 
 /* Penyesuaian ukuran pada berbagai elemen */
@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem; /* Setara dengan 32px */
+    font-size: 1rem; /* Setara dengan 32px */
 }
 
 h3 {
@@ -55,15 +55,31 @@ body {
     padding: 0 20px;
 }
 
+/* Header */
 header {
-    background-color: var(--primary);
-    color: var(--background);
-    padding: 1rem 0;
+    background: linear-gradient(135deg, #004d7a, #0076a8); /* Gradasi biru lebih dinamis */
+    color: #fff;  /* Menggunakan warna putih agar teks lebih kontras */
+    padding: 0.8rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mengubah warna logo */
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffcc00;  /* Warna logo kuning cerah untuk kontras */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;  /* Menambahkan transisi pada hover */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #ffbb33;  /* Warna kuning lebih terang saat hover */
 }
 
 /* Navigation */
@@ -71,31 +87,36 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;  /* Padding kiri dan kanan untuk lebih lega */
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+
+.logo:hover {
+    transform: scale(1.1);  /* Efek zoom saat hover */
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    gap: 2rem;
+    margin-left: auto;
 }
 
 .nav-links li {
-    margin-left: 1.5rem;
+    position: relative;
 }
 
 .nav-links a {
-    color: var(--background);
+    color: #ffffff;  /* Warna putih untuk menu default */
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--secondary);
+    color: #fca311;  /* Warna oranye terang saat hover */
+    transform: translateY(-2px);  /* Efek gerak saat hover */
 }
 
 /* Sembunyikan checkbox */
@@ -490,11 +511,11 @@ footer a:hover {
     }
 
     .nav-links {
-        display: none; /* Sembunyikan navigasi */
+        display: none;
         flex-direction: column;
-        background-color: var(--primary);
+        background-color: #0076a8;  /* Warna biru cerah pada latar belakang menu hamburger */
         position: absolute;
-        top: 100%; /* Tepat di bawah header */
+        top: 70px;
         right: 0;
         width: 100%;
         padding: 1rem 0;
@@ -507,10 +528,15 @@ footer a:hover {
     }
 
     .nav-links a {
-        color: var(--background);
-        font-weight: bold;
-        display: block;
-        padding: 0.5rem 1rem;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        text-align: center;
+        color: #ffffff;  /* Warna putih untuk teks di menu mobile */
+    }
+
+    .nav-links a:hover {
+        background-color: #ffcc00;  /* Warna kuning terang saat hover di mobile */
+        color: #0076a8;  /* Mengubah warna teks saat hover */
     }
 
     /* Tampilkan navigasi saat checkbox dicentang */
@@ -521,6 +547,10 @@ footer a:hover {
     /* Tampilkan tombol hamburger */
     .hamburger {
         display: block;
+        font-size: 2rem;
+        color: #ffffff;
+        cursor: pointer;
+        z-index: 1001;
     }
 
     .about-content {
